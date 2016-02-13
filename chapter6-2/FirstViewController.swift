@@ -12,9 +12,23 @@ class FirstViewController: UIViewController {
 
     @IBOutlet weak var dataTextField: UITextField!
     
-    @IBAction func tapInput() {
+    // AppDelegateにアクセスするオブジェクト
+    let ap = UIApplication.sharedApplication().delegate as! AppDelegate
+    
+    // 画面表示時にAppDelegateから共有変数の値を取得
+    override func viewWillAppear(animated: Bool) {
+        dataTextField.text = String(ap.cmValue)
     }
     
+    @IBAction func tapInput() {
+        // Tapされたら値をAppDelegateに書き込む
+        dataTextField.resignFirstResponder() // キーボード閉じる
+        if let text = dataTextField.text {
+            if let cmValue = Double(text) {
+                ap.cmValue = cmValue
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
