@@ -12,7 +12,24 @@ class thirdViewController: UIViewController {
 
     @IBOutlet weak var dataInputText: UITextField!
     
+    // AppDelegateにアクセスするオブジェクト
+    let ap = UIApplication.sharedApplication().delegate as! AppDelegate
+
+    // 画面表示時にAppDelegateから共有変数の値を取得
+    override func viewWillAppear(animated: Bool) {
+        let sunValue = ap.cmValue * 0.33
+        dataInputText.text = String(sunValue)
+    }
+
     @IBAction func tapInput() {
+        // Tapされたら値をAppDelegateに書き込む
+        dataInputText.resignFirstResponder() // キーボード閉じる
+        if let text = dataInputText.text {
+            if let sunValue = Double(text) {
+                ap.cmValue = sunValue / 0.33
+            }
+        }
+
     }
     
     override func viewDidLoad() {
