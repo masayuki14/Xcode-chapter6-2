@@ -10,6 +10,11 @@ import UIKit
 
 class thirdViewController: UIViewController {
 
+    @IBOutlet weak var dataInputText: UITextField!
+    
+    @IBAction func tapInput() {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
