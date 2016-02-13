@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6ED45AB31C6F060300B6D64D /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED45AB21C6F060300B6D64D /* thirdViewController.swift */; };
 		6EFB32DB1C6EF8D000299A70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFB32DA1C6EF8D000299A70 /* AppDelegate.swift */; };
 		6EFB32DD1C6EF8D000299A70 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFB32DC1C6EF8D000299A70 /* FirstViewController.swift */; };
 		6EFB32DF1C6EF8D000299A70 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFB32DE1C6EF8D000299A70 /* SecondViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6ED45AB21C6F060300B6D64D /* thirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thirdViewController.swift; sourceTree = "<group>"; };
 		6EFB32D71C6EF8D000299A70 /* chapter6-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chapter6-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFB32DA1C6EF8D000299A70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EFB32DC1C6EF8D000299A70 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				6EFB32E31C6EF8D000299A70 /* Assets.xcassets */,
 				6EFB32E51C6EF8D000299A70 /* LaunchScreen.storyboard */,
 				6EFB32E81C6EF8D000299A70 /* Info.plist */,
+				6ED45AB21C6F060300B6D64D /* thirdViewController.swift */,
 			);
 			path = "chapter6-2";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				6EFB32DF1C6EF8D000299A70 /* SecondViewController.swift in Sources */,
 				6EFB32DB1C6EF8D000299A70 /* AppDelegate.swift in Sources */,
+				6ED45AB31C6F060300B6D64D /* thirdViewController.swift in Sources */,
 				6EFB32DD1C6EF8D000299A70 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +292,7 @@
 				6EFB32ED1C6EF8D000299A70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
